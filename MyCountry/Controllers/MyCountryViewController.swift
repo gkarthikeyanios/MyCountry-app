@@ -71,6 +71,7 @@ class MyCountryViewController : UIViewController, UITableViewDataSource, UITable
         activityIndicator =  UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.gray)
         activityIndicator.center = view.center
         self.view.addSubview(activityIndicator)
+        
         self.view.bringSubview(toFront:activityIndicator)
         
         activityIndicator.addConstraint(NSLayoutConstraint(item: activityIndicator, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 50))
